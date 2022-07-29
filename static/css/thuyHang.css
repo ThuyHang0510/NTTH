@@ -1,0 +1,276 @@
+#article-page .post-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 640px;
+}
+#article-page .article-post {
+  margin-top: 23px;
+  overflow: hidden;
+}
+#article-page .article-post .post-info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+#article-page .article-post .user-info {
+  display: flex;
+  gap: 16px;
+}
+#article-page .article-post .user-info .user-avatar {
+  border-radius: 50%;
+  flex-shrink: 0;
+  height: 57px;
+  overflow: hidden;
+  width: 57px;
+}
+#article-page .article-post .user-info .user-avatar img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+#article-page .article-post .user-info .user-post-time {
+  font-family: SF Pro Text;
+  margin-top: 3px;
+}
+#article-page .article-post .user-info .name {
+  font-family: SF Pro Text;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+#article-page .article-post .user-info.user-info-overview {
+  font-family: New York Small;
+  gap: 24px;
+  line-height: 25.6px;
+  margin-top: 35px;
+}
+#article-page .article-post .user-info.user-info-overview .user-avatar {
+  height: 71px;
+  width: 71px;
+}
+#article-page .article-post .user-info.user-info-overview .name-wrapper {
+  margin-top: -3px;
+}
+#article-page .article-post .post-share {
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  display: flex;
+}
+#article-page .article-post .post-share .post-share-icon-wrapper {
+  align-items: center;
+  display: flex;
+  font-family: SF Pro Text;
+  font-weight: 500;
+  gap: 16px;
+  height: 43px;
+  justify-content: center;
+  width: 69px;
+}
+#article-page .article-post .post-share > * + * {
+  border-left: 1px solid #eaeaea;
+}
+#article-page .article-post .post-share.wide > * {
+  flex: 1 1;
+  height: 62px;
+  width: auto;
+}
+#article-page .article-post .post-content {
+  font-family: New York Medium;
+  font-size: 20px;
+  line-height: 34px;
+  margin-bottom: 77px;
+  margin-top: 53px;
+}
+#article-page .article-post .post-content > :last-child {
+  padding-top: 28px;
+}
+#article-page .article-post .post-content > * + * {
+  margin-top: 24px;
+}
+#article-page .article-post .post-content .post-title {
+  font-family: SF Pro Display;
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 9px;
+  padding-top: 41px;
+}
+#article-page .article-post .post-content .image {
+  padding-bottom: 27px;
+  padding-top: 19px;
+}
+#article-page .article-post .post-content .image img {
+  max-width: 854px;
+}
+#article-page .article-post .post-content .image .caption {
+  font-family: SF Pro Text;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.4px;
+  margin-top: 12px;
+  max-width: 480px;
+  text-align: center;
+}
+#article-page .article-post .post-content .list {
+  padding-bottom: 27px;
+  padding-top: 28px;
+}
+#article-page .article-post .post-content .list ul {
+  margin: 20px 24px 0;
+}
+#article-page .article-post .post-content .list ul > * {
+  position: relative;
+}
+#article-page .article-post .post-content .list ul > * + * {
+  margin-top: 16px;
+}
+#article-page .article-post .post-content .list ul > :before {
+  background-color: #000;
+  content: "";
+  height: 6px;
+  left: -23px;
+  position: absolute;
+  top: 14px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 6px;
+}
+#article-page .article-post .tags {
+  font-family: SF Pro Text;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  margin: 30px 0;
+}
+#article-page .article-post .tags > span {
+  text-decoration: underline;
+}
+@media screen and (max-width: 375px) {
+  #article-page .article-post .post-info {
+    display: block;
+  }
+  #article-page .article-post .user-info {
+    gap: 15px;
+  }
+  #article-page .article-post .user-info .name {
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    margin-top: 5px;
+  }
+  #article-page .article-post .user-info .user-post-time {
+    font-size: 13px;
+  }
+  #article-page .article-post .user-info.user-info-overview {
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 26px;
+  }
+  #article-page .article-post .user-info.user-info-overview .name {
+    letter-spacing: 1.4px;
+  }
+  #article-page .article-post .user-info.user-info-overview .name-wrapper {
+    line-height: 22px;
+  }
+  #article-page .article-post .user-info.user-info-overview .user-avatar {
+    float: left;
+    margin-right: 14px;
+    margin-top: 4px;
+  }
+  #article-page .article-post .post-share {
+    margin-top: 24px;
+    position: relative;
+  }
+  #article-page .article-post .post-share > * {
+    flex: 1 1;
+  }
+  #article-page .article-post .post-share .post-share-icon-wrapper {
+    height: 52px;
+    width: auto;
+  }
+  #article-page .article-post .post-share.wide:after {
+    content: "Share:";
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 500;
+    left: -2px;
+    letter-spacing: 0.5px;
+    line-height: 17px;
+    position: absolute;
+    top: -26px;
+  }
+  #article-page .article-post .post-share.wide > * {
+    height: 52px;
+  }
+  #article-page .article-post .post-content {
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 68px;
+    margin-top: 32px;
+  }
+  #article-page .article-post .post-content > * {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #article-page .article-post .post-content > :last-child {
+    padding-top: 28px;
+  }
+  #article-page .article-post .post-content > * + * {
+    margin-top: 19px;
+  }
+  #article-page .article-post .post-content .post-title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    padding-bottom: 0;
+    padding-top: 23px;
+  }
+  #article-page .article-post .post-content .image {
+    padding: 23px 0;
+  }
+  #article-page .article-post .post-content .image .caption {
+    font-size: 13px;
+    line-height: 18px;
+    max-width: 330px;
+  }
+  #article-page .article-post .tags {
+    font-size: 14px;
+    margin: 23px 0;
+  }
+  #article-page .article-post .tags > span {
+    text-decoration: underline;
+  }
+  #article-page .home-sec-1 {
+    margin-top: 18px;
+  }
+  #article-page .home-sec-1 .img-wrapper {
+    margin-top: 35px;
+  }
+  #article-page .line {
+    margin-top: 22px;
+  }
+}
+#page-break {
+  border-top: 2px solid #000;
+  margin-bottom: 71px;
+  margin-top: 131px;
+  position: relative;
+  width: 100%;
+}
+#page-break > svg {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 82px;
+}
+@media screen and (max-width: 375px) {
+  #page-break {
+    margin-bottom: 54px;
+    margin-top: 90px;
+  }
+  #page-break > svg {
+    margin-top: -5px;
+    width: 66px;
+  }
+}
