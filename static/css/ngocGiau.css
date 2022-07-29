@@ -1,0 +1,70 @@
+.home-sec-2 {
+  margin-bottom: 103px;
+  margin-top: 64px;
+}
+.home-sec-2 .title {
+  font-size: 44px;
+}
+.articles {
+  grid-gap: 28px;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 38px;
+  max-width: 636px;
+}
+.articles .article img {
+  height: 176px;
+  max-width: 304px;
+  object-fit: cover;
+}
+.articles .article .text {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+  margin: 16px 22px 0;
+  min-height: 114px;
+  text-align: center;
+}
+@media screen and (max-width: 375px) {
+  .home-sec-2 {
+    margin-bottom: 82px;
+    margin-top: 48px;
+  }
+  .home-sec-2 .title {
+    font-size: 32px;
+  }
+  .articles {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 21px;
+  }
+  .articles .article img {
+    height: 194px;
+    max-width: none;
+  }
+  .articles .article .text {
+    margin: 15px 32px 0;
+    min-height: 92px;
+  }
+}
+
+#whatToReadNext .articles {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 27px;
+  max-width: 968px;
+}
+#whatToReadNext .articles .article .text {
+  margin-top: 20px;
+  min-height: 84px;
+}
+@media screen and (max-width: 375px) {
+  #whatToReadNext .articles {
+    gap: 42px;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 21px;
+  }
+  #whatToReadNext .articles .article .text {
+    margin-top: 15px;
+    min-height: 0;
+  }
+}
